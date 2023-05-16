@@ -50,27 +50,28 @@ void ADirectorPiece::buildPiece()
 
 ABlock* ADirectorPiece::getBlock(int _num)
 {
+	FRotator Rotation(0.0, 0.0, 0.0);
 	switch (_num) {
 	case 1:
-		return GetWorld()->SpawnActor<ABlockNormal>(ABlockNormal::StaticClass());
+		return GetWorld()->SpawnActor<ABlockNormal>(this->GetActorLocation(), Rotation);
 		break;
 	case 2:
-		return GetWorld()->SpawnActor<ABlockPiedra>(ABlockPiedra::StaticClass());
+		return GetWorld()->SpawnActor<ABlockPiedra>(this->GetActorLocation(), Rotation);
 		break;
 	case 3:
-		return GetWorld()->SpawnActor<ABlockMadera>(ABlockMadera::StaticClass());
+		return GetWorld()->SpawnActor<ABlockMadera>(this->GetActorLocation(), Rotation);
 		break;
 	case 4:
-		return GetWorld()->SpawnActor<ABlockMetal>(ABlockMetal::StaticClass());
+		return GetWorld()->SpawnActor<ABlockMetal>(this->GetActorLocation(), Rotation);
 		break;
 	case 5:
-		return GetWorld()->SpawnActor<ABlockExplosivo>(ABlockExplosivo::StaticClass());
+		return GetWorld()->SpawnActor<ABlockExplosivo>(this->GetActorLocation(), Rotation);
 		break;
 	case 6:
-		return GetWorld()->SpawnActor<ABlockHielo>(ABlockExplosivo::StaticClass());
+		return GetWorld()->SpawnActor<ABlockHielo>(this->GetActorLocation(), Rotation);
 		break;
 	case 7:
-		return GetWorld()->SpawnActor<ABlockExplosivoAmarillo>(ABlockExplosivoAmarillo::StaticClass());
+		return GetWorld()->SpawnActor<ABlockExplosivoAmarillo>(this->GetActorLocation(), Rotation);
 	default:
 		return nullptr;
 	}

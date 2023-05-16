@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodePiece() {}
 	UPackage* Z_Construct_UPackage__Script_TetrisUSFX01();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
+	TETRISUSFX01_API UClass* Z_Construct_UClass_ADirectorPiece_NoRegister();
 // End Cross Module References
 	void APiece::StaticRegisterNativesAPiece()
 	{
@@ -42,6 +43,10 @@ void EmptyLinkFunctionForGeneratedCodePiece() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Colors_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Colors;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_director_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_director;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -71,10 +76,18 @@ void EmptyLinkFunctionForGeneratedCodePiece() {}
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APiece_Statics::NewProp_Colors = { "Colors", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APiece, Colors), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_APiece_Statics::NewProp_Colors_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APiece_Statics::NewProp_Colors_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APiece_Statics::NewProp_director_MetaData[] = {
+		{ "Category", "Principal" },
+		{ "ModuleRelativePath", "Piece.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APiece_Statics::NewProp_director = { "director", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APiece, director), Z_Construct_UClass_ADirectorPiece_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APiece_Statics::NewProp_director_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APiece_Statics::NewProp_director_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APiece_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APiece_Statics::NewProp_SceneComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APiece_Statics::NewProp_Colors_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APiece_Statics::NewProp_Colors,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APiece_Statics::NewProp_director,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APiece_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APiece>::IsAbstract,
@@ -103,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodePiece() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APiece, 3933145568);
+	IMPLEMENT_CLASS(APiece, 1353750965);
 	template<> TETRISUSFX01_API UClass* StaticClass<APiece>()
 	{
 		return APiece::StaticClass();

@@ -69,7 +69,7 @@ void ABuildPiece_I::spawnBlocks()
 		b->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 		b->SetActorRelativeLocation(FVector(0.0, s.first, s.second));
 	}
-	/*piece->setBlocks(shapes, tipoBlock);*/
+	piece->setBlocks(shapes, tipoBlock);
 	piece = GetWorld()->SpawnActor<APiece>(Location, Rotation);
 	piece->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 }

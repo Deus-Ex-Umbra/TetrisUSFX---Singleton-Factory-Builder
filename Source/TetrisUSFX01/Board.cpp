@@ -181,56 +181,40 @@ void ABoard::NewPiece()
         case 1:
             director->setBuilder(pieceI);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_I>(Location, Rotation));
             break;
         case 2:
             director->setBuilder(pieceIngeniero);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_Ingeniero>(Location, Rotation));
             break;
         case 3:
             director->setBuilder(pieceJ);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_J>(Location, Rotation));
             break;
         case 4:
             director->setBuilder(pieceL);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_L>(Location, Rotation));
             break;
         case 5:
             director->setBuilder(pieceO);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_O>(Location, Rotation));
             break;
         case 6:
             director->setBuilder(pieceS);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_S>(Location, Rotation));
             break;
         case 7:
             director->setBuilder(pieceT);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_T>(Location, Rotation));
             break;
         case 8:
             director->setBuilder(pieceZ);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
-            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_Z>(Location, Rotation));
             break;
         case 9:
             director->setBuilder(pieceAmarilla);
             director->buildPiece();
-            CurrentPiece = director->getPiece();
         }
+        CurrentPiece = director->getPiece();
         /*director->buildPiece();
         CurrentPiece = director->getPiece();*/
     /*} else {

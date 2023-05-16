@@ -17,7 +17,7 @@ APiece::APiece()
 
 	SceneComponent = CreateDefaultSubobject<USceneComponent>("Pieces Scene");
 	RootComponent = SceneComponent;
-
+    director = GetWorld()->SpawnActor<ADirectorPiece>(ADirectorPiece::StaticClass());
     struct FConstructorStatics
     {
         ConstructorHelpers::FObjectFinderOptional<UMaterial> Color_0;
@@ -124,25 +124,24 @@ void APiece::EndPlay(const EEndPlayReason::Type EndPlayReason)
     UE_LOG(LogTemp, Warning, TEXT("Piezas eliminadas"));
 }
 
-//void APiece::Dismiss()
-//{
-//    Blocks.Empty();
-//}
+void APiece::Dismiss()
+{
+    Blocks.Empty();
+}
 
-//void APiece::setBlocks(const std::vector<std::pair<float, float>>& BlocksC, std::vector<int> _tipoBlock)
-//{
-//    ABlock* Block;
-//    int index = 0;
-//    ADirectorPiece* director = GetWorld()->SpawnActor<ADirectorPiece>(ADirectorPiece::StaticClass());
-//    for (auto i : BlocksC) {
-//        Block = director->getBlock(_tipoBlock[index]);
-//        index++;
-//        Block->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
-//        Block->SetActorRelativeLocation(FVector(0.0, i.first, i.second));
-//        Blocks.Add(Block);
-//        setinsetBlocks(true);
-//    }
-//}
+void APiece::setBlocks(const std::vector<std::pair<float, float>>& BlocksC, std::vector<int> _tipoBlock)
+{
+    ABlock* Block;
+    int index = 0;
+    for (auto i : BlocksC) {
+        Block = director->getBlock(_tipoBlock[index]);
+        Block->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+        Block->SetActorRelativeLocation(FVector(0.0, i.first, i.second));
+        Blocks.Add(Block);
+        index++;
+    }
+    setinsetBlocks(true);
+}
 
 void APiece::DrawDebugLines()
 {

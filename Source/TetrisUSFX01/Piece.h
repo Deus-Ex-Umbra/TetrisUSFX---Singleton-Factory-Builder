@@ -48,7 +48,8 @@ public:
 	
 	UPROPERTY(EditAnywhere)
 	TArray<class UMaterial*> Colors;
-
+	UPROPERTY(VisibleAnywhere, Category = "Principal")
+		class ADirectorPiece* director;
 private:
 
 	TArray<ABlock*> Blocks;
