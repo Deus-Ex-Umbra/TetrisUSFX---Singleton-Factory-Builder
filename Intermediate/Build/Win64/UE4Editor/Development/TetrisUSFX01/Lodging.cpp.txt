@@ -1,0 +1,1 @@
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-master\Intermediate\Build\Win64\UE4Editor\Development\TetrisUSFX01\Definitions.TetrisUSFX01.h

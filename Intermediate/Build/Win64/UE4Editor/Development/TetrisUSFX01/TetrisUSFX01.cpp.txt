@@ -1,0 +1,2 @@
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Development\TetrisUSFX01\Definitions.TetrisUSFX01.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\TetrisUSFX01.h

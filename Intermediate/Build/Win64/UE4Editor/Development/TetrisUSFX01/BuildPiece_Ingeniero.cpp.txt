@@ -1,0 +1,34 @@
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Development\TetrisUSFX01\Definitions.TetrisUSFX01.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BuildPiece_Ingeniero.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BuilderPiece.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BuilderPiece.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\Block.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\Block.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockHielo.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockHielo.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockExplosivo.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockExplosivo.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockMetal.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockMetal.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockMadera.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockMadera.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockNormal.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockNormal.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockPiedra.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockPiedra.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BuildPiece_Ingeniero.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\Piece.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockHijo01.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockHijo01.generated.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Source\TetrisUSFX01\BlockHijo02.h
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\BlockHijo02.generated.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\functional
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\xmemory
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\limits
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\cfloat
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\cwchar
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\cstdio
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\isa_availability.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\xutility
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE\vector
+C:\Users\USUARIO\Desktop\TetrisUSFX01---Singleton-Factory-Builder-master\Intermediate\Build\Win64\UE4Editor\Inc\TetrisUSFX01\Piece.generated.h
