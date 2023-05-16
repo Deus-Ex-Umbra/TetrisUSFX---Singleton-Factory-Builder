@@ -124,10 +124,10 @@ void APiece::EndPlay(const EEndPlayReason::Type EndPlayReason)
     UE_LOG(LogTemp, Warning, TEXT("Piezas eliminadas"));
 }
 
-void APiece::Dismiss()
-{
-    Blocks.Empty();
-}
+//void APiece::Dismiss()
+//{
+//    Blocks.Empty();
+//}
 
 void APiece::setBlocks(const std::vector<std::pair<float, float>>& BlocksC, std::vector<int> _tipoBlock)
 {
