@@ -91,12 +91,12 @@ void APiece::SpawnBlocks()
             //ABlock* B = GetWorld()->SpawnActor<ABlock>(this->GetActorLocation(), Rotation);
             ABlock* B = nullptr;
 
-            switch (FMath::RandRange(1, 2)) {
+            switch (FMath::RandRange(1, 8)) {
             case 1:
                 B = GetWorld()->SpawnActor<ABlockHijo01>(this->GetActorLocation(), Rotation); break;
             case 2:
                 B = GetWorld()->SpawnActor<ABlockHijo02>(this->GetActorLocation(), Rotation); break;
-            /*case 3:
+            case 3:
                 B = GetWorld()->SpawnActor<ABlockNormal>(this->GetActorLocation(), Rotation); break;
             case 4:
                 B = GetWorld()->SpawnActor<ABlockMadera>(this->GetActorLocation(), Rotation); break;
@@ -107,7 +107,7 @@ void APiece::SpawnBlocks()
             case 7:
                 B = GetWorld()->SpawnActor<ABlockExplosivo>(this->GetActorLocation(), Rotation); break;
             case 8:
-                B = GetWorld()->SpawnActor<ABlockHielo>(this->GetActorLocation(), Rotation); break;*/
+                B = GetWorld()->SpawnActor<ABlockHielo>(this->GetActorLocation(), Rotation); break;
             default:
                 B = nullptr; break;
             }

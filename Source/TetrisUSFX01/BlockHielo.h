@@ -13,6 +13,7 @@ UCLASS()
 class TETRISUSFX01_API ABlockHielo : public ABlock
 {
 	GENERATED_BODY()
+public:
 	ABlockHielo();
 	virtual void MostrarInformacion();
 };

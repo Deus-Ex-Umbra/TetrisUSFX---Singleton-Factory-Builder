@@ -8,6 +8,7 @@
 #include "BlockMadera.h"
 #include "BlockNormal.h"
 #include "BlockPiedra.h"
+#include "BlockExplosivoAmarillo.h"
 
 
 // Sets default values
@@ -68,6 +69,8 @@ ABlock* ADirectorPiece::getBlock(int _num)
 	case 6:
 		return GetWorld()->SpawnActor<ABlockHielo>(ABlockExplosivo::StaticClass());
 		break;
+	case 7:
+		return GetWorld()->SpawnActor<ABlockExplosivoAmarillo>(ABlockExplosivoAmarillo::StaticClass());
 	default:
 		return nullptr;
 	}

@@ -13,6 +13,7 @@ UCLASS()
 class TETRISUSFX01_API ABlockExplosivo : public ABlock
 {
 	GENERATED_BODY()
+public:
 	ABlockExplosivo();
-	virtual void MostrarInformacion();
+	void MostrarInformacion();
 };

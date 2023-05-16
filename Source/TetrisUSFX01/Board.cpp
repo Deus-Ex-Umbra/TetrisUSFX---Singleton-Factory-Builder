@@ -11,6 +11,7 @@
 #include "BuildPiece_S.h"
 #include "BuildPiece_T.h"
 #include "BuildPiece_Z.h"
+#include "BuildPieza_ExplosivaAmarilla.h"
 #include "Piece.h"
 #include "EngineUtils.h"
 #include "DrawDebugHelpers.h"
@@ -39,14 +40,15 @@ void ABoard::BeginPlay()
     }
     FVector Location(0.0, 5.0, 185.0);
     FRotator Rotation(0.0, 0.0, 0.0);
-    pieceI = GetWorld()->SpawnActor<ABuildPiece_I>(Location, Rotation);
-    pieceIngeniero = GetWorld()->SpawnActor<ABuildPiece_Ingeniero>(Location, Rotation);
-    pieceJ = GetWorld()->SpawnActor<ABuildPiece_J>(Location, Rotation);
-    pieceL = GetWorld()->SpawnActor<ABuildPiece_L>(Location, Rotation);
-    pieceO = GetWorld()->SpawnActor<ABuildPiece_O>(Location, Rotation);
-    pieceS = GetWorld()->SpawnActor<ABuildPiece_S>(Location, Rotation);
-    pieceT = GetWorld()->SpawnActor<ABuildPiece_T>(Location, Rotation);
-    pieceZ = GetWorld()->SpawnActor<ABuildPiece_Z>(Location, Rotation);
+    pieceI = GetWorld()->SpawnActor<ABuildPiece_I>(FVector(0.0, 5.0, 5.0), Rotation);
+    pieceIngeniero = GetWorld()->SpawnActor<ABuildPiece_Ingeniero>(FVector(0.0, 5.0, 25.0), Rotation);
+    pieceJ = GetWorld()->SpawnActor<ABuildPiece_J>(FVector(0.0, 5.0, 45.0), Rotation);
+    pieceL = GetWorld()->SpawnActor<ABuildPiece_L>(FVector(0.0, 5.0, 65.0), Rotation);
+    pieceO = GetWorld()->SpawnActor<ABuildPiece_O>(FVector(0.0, 5.0, 85.0), Rotation);
+    pieceS = GetWorld()->SpawnActor<ABuildPiece_S>(FVector(0.0, 5.0, 105.0), Rotation);
+    pieceT = GetWorld()->SpawnActor<ABuildPiece_T>(FVector(0.0, 5.0, 125.0), Rotation);
+    pieceZ = GetWorld()->SpawnActor<ABuildPiece_Z>(FVector(0.0, 5.0, 145.0), Rotation);
+    pieceAmarilla = GetWorld()->SpawnActor< ABuildPieza_ExplosivaAmarilla>(FVector(0.0, -10.0, 85.0), Rotation);
     director = GetWorld()->SpawnActor<ADirectorPiece>(ADirectorPiece::StaticClass());
 }
 
@@ -171,43 +173,70 @@ void ABoard::NewPiece()
         CurrentPiece->Destroy();
     }
 
-    FVector Location(0.0, 5.0, 195.0);
+    FVector Location(0.0, 5.0, 165.0);
     FRotator Rotation(0.0, 0.0, 0.0);
-    if (FMath::RandRange(1, 2) == 1)
-    {
-        APiece* piece;
-        switch (FMath::RandRange(1, 8)) {
+    /*if (FMath::RandRange(1, 2) == 1)
+    {*/
+        switch (FMath::RandRange(1, 9)) {
         case 1:
             director->setBuilder(pieceI);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_I>(Location, Rotation));
             break;
         case 2:
             director->setBuilder(pieceIngeniero);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_Ingeniero>(Location, Rotation));
             break;
         case 3:
             director->setBuilder(pieceJ);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_J>(Location, Rotation));
             break;
         case 4:
             director->setBuilder(pieceL);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_L>(Location, Rotation));
             break;
         case 5:
             director->setBuilder(pieceO);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_O>(Location, Rotation));
             break;
         case 6:
             director->setBuilder(pieceS);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_S>(Location, Rotation));
             break;
         case 7:
             director->setBuilder(pieceT);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_T>(Location, Rotation));
             break;
         case 8:
             director->setBuilder(pieceZ);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
+            CurrentPiece = Cast<APiece>(GetWorld()->SpawnActor<ABuildPiece_Z>(Location, Rotation));
             break;
+        case 9:
+            director->setBuilder(pieceAmarilla);
+            director->buildPiece();
+            CurrentPiece = director->getPiece();
         }
-        director->buildPiece();
-        piece = director->getPiece();
-        CurrentPiece = piece;
-    } else {
+        /*director->buildPiece();
+        CurrentPiece = director->getPiece();*/
+    /*} else {
         CurrentPiece = GetWorld()->SpawnActor<APiece>(Location, Rotation);
-    }
+    }*/
+    /*CurrentPiece = GetWorld()->SpawnActor<APiece>(Location, Rotation);*/
     bGameOver = CheckGameOver();
     if (bGameOver)
     {

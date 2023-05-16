@@ -9,7 +9,7 @@ AEscenario2::AEscenario2()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	/*static ConstructorHelpers::FObjectFinder<UStaticMesh> EscenarioMesh(TEXT("Material'/Game/Mesh/Material_1.Material_1'"));*/
 }
 
 void AEscenario2::mostrarInformacion()

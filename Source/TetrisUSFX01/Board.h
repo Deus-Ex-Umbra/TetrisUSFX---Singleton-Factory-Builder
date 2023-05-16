@@ -55,6 +55,8 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Principal")
 		class ABuildPiece_Ingeniero* pieceIngeniero;
 	UPROPERTY(VisibleAnywhere, Category = "Principal")
+		class ABuildPieza_ExplosivaAmarilla* pieceAmarilla;
+	UPROPERTY(VisibleAnywhere, Category = "Principal")
 		class ADirectorPiece* director;
 
 private:

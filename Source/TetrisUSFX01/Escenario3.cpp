@@ -8,7 +8,7 @@ AEscenario3::AEscenario3()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	/*static ConstructorHelpers::FObjectFinder<UStaticMesh> EscenarioMesh(TEXT("Material'/Game/Mesh/Material_3.Material_3'"));*/
 }
 
 void AEscenario3::mostrarInformacion()

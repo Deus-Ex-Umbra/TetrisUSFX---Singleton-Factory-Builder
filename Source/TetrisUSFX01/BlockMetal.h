@@ -13,6 +13,7 @@ UCLASS()
 class TETRISUSFX01_API ABlockMetal : public ABlock
 {
 	GENERATED_BODY()
+public:
 	ABlockMetal();
 	virtual void MostrarInformacion();
 };
